@@ -1,0 +1,15 @@
+// Map
+
+$redes: (
+  twitter: rgb(0, 119, 255),
+  instagram: rgb(255, 55, 0),
+  mail: rgb(255, 255, 0)
+);
+
+
+// Mixin
+
+@mixin size-logo {
+  width: 65px;
+  height: 65px;
+}

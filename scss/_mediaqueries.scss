@@ -1,0 +1,138 @@
+// /Media Query Tablet
+
+
+@media screen and (min-width:665px) {
+
+  // Estilos Contacto
+
+
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+// Media Query Desktop
+
+
+@media screen and (min-width:1400px) {
+
+  // Estilos Quienes Somos
+
+
+  .qs-container {
+    margin-top: 150px;
+  }
+
+
+
+
+
+
+
+
+
+  // Estilos Servicios
+
+
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+  }
+
+
+
+
+
+  // Estilos Quienes Somos
+
+
+  .qs-container {
+    display: grid;
+    grid-template-columns: -1fr -1fr;
+    grid-template-rows: -1fr -1fr -1fr -1fr;
+    grid-auto-columns: -1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "top-left text-right"
+      "top-left img-right"
+      "text-left bottom-right"
+      "img-left bottom-right";
+  }
+
+  .qs-img-1 {
+    grid-area: top-left;
+  }
+
+  .qs-text-1 {
+    grid-area: text-right;
+  }
+
+  .qs-img-2 {
+    grid-area: img-right;
+  }
+
+  .qs-text-2 {
+    grid-area: text-left;
+  }
+
+  .qs-img-3 {
+    display: block;
+    grid-area: img-left;
+  }
+
+  .qs-img-4 {
+    display: block;
+    grid-area: bottom-right;
+  }
+
+
+
+
+
+  // Estilos Contacto
+
+
+  .contact-container {
+    margin: 0 60px 0 60px !important;
+  }
+
+
+  .contact-wrapper {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 250px 450px;
+    grid-template-rows: 650px;
+    grid-template-areas:
+      "left left right";
+
+  }
+
+  .contact-form {
+    font-size: 25px;
+    grid-area: left;
+    height: 100%;
+
+  }
+
+  .contact-info {
+    grid-area: right;
+    font-size: 25px;
+    height: 100%;
+
+    h3,
+    ul,
+    p {
+      padding: 10px;
+      font-size: 30px;
+      margin-bottom: 60px;
+    }
+  }
+
+}
